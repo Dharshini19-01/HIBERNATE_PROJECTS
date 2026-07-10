@@ -12,8 +12,9 @@ import java.time.LocalDate;
 @Entity
 @Table(name="student_tables")
 public class Student {
-    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+
     private int id;
     @Column(name = "firstname",nullable = false)
     private String first_name;

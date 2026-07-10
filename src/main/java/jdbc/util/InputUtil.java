@@ -32,8 +32,8 @@ public class InputUtil {
 
     public static StudentDTO acceptStudentDetailsToSave(Scanner sc){
 
-        System.out.print("Enter id of student:");
-        int id=sc.nextInt();
+        //System.out.print("Enter id of student:");
+        //int id=sc.nextInt();
         System.out.print("Enter first name of student:");
         String first_name=sc.next();
         System.out.print("Enter last name of student:");
@@ -60,7 +60,7 @@ public class InputUtil {
         String grade= sc.next().toUpperCase();
         try {
             StudentDTO studentDTO=new StudentDTO();
-            studentDTO.setId(id);
+            //studentDTO.setId(id);
             studentDTO.setFirst_name(first_name);
             studentDTO.setLast_name(last_name);
             studentDTO.setGender(Gender.valueOf(gender));
